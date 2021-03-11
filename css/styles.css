@@ -800,37 +800,6 @@ textarea {
   color: var(--title-text-color);
 }
 
-.button-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  
-  width: 30px;
-  height: 30px;
-  padding: 6px;
-
-  display: flex;
-  justify-content: center;
-
-  color: var(--primary-black-color);
-  background-color: var(--white-color);
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);  
-  cursor: pointer;
-  outline: none;
-
-  transition: color 250ms var(--timing-function);
-}
-
-.icon-close {
-  fill: currentColor;
-}
-
-.button-close:hover,
-.button-close:focus {
-  color: var(--accent-color);
-}
-
 .form-field {
   display: flex;
   flex-direction: column;
@@ -874,8 +843,8 @@ textarea {
   border: 1px solid var(--accent-color)
 }
 
-.form-field__input:focus ~ .icon,
-.form-field__input:hover ~ .icon {
+.form-field__input:focus ~ .form-field__icon,
+.form-field__input:hover ~ .form-field__icon {
   fill: var(--accent-color);
 }
 
@@ -932,20 +901,20 @@ textarea {
   border-radius: 2px;
 }
 
-.icon-check use {
+.form-check__icon .form-check__channel {
   display: none;
 }
 
-.input-check:checked ~ .icon-check use {
+.form-check__input:checked ~ .form-check__icon .form-check__channel {
   display: block;
 }
 
-.input-check:checked ~ .icon-check {
+.form-check__input:checked ~ .form-check__icon {
   border: none;
   background-color: var(--accent-color);
 }
 
-.agreement {
+.form-check__agreement {
   color: var(--accent-color);
   text-decoration-line: underline;
 }
@@ -955,7 +924,7 @@ textarea {
   justify-content: center;
 }
 
-.button-send {
+.form-send__button {
   min-width: 200px;
   padding: 10px 55px;
 
@@ -975,7 +944,38 @@ textarea {
   outline: none;
 }
 
-.button-send:hover,
-.button-send:focus {
+.form-send__button:hover,
+.form-send__button:focus {
   background-color: #188CE8;
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+
+  display: flex;
+  justify-content: center;
+
+  color: var(--primary-black-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);  
+  cursor: pointer;
+  outline: none;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.button-close__icon {
+  fill: currentColor;
+}
+
+.button-close:hover,
+.button-close:focus {
+  color: var(--accent-color);
 }
