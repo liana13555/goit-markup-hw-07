@@ -1,5 +1,3 @@
-/* Media-footer */
-
 .media-footer {
   display: flex;
 }
@@ -11,10 +9,10 @@
 
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
 
-.media-footer__item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .media-footer__link {
@@ -26,13 +24,13 @@
   border-radius: 50%;
 
   transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 } 
 
 .media-footer__icon {
   fill: $white-color;
-}
-
-.media-footer__link:hover,
-.media-footer__:focus {
-  background-color: $accent-color;
 }

@@ -1,5 +1,3 @@
-/* Social-media */
-
 .social-media {
   display: flex;
   justify-content: space-between;
@@ -29,14 +27,14 @@
   border-radius: 50%;
 
   transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
 } 
 
 .social-media__icon {
   fill: currentColor;
-}
-
-.social-media__link:hover,
-.social-media__link:focus {
-  color: $white-color;
-  background-color: $accent-color;
 }

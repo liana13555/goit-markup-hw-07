@@ -1,5 +1,3 @@
-/* Footer */
-
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -29,10 +27,10 @@
   font-size: 14px;
   line-height: 1.7;
   color: $secondary-black-color;
-}
 
-.address__link:not(:last-child) {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .join__text {

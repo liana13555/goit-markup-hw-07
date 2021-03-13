@@ -4,12 +4,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  &--inverse {
+    color: $white-color;
+  }
 }
 
 .logo__part {
   color: $accent-color;
-}
-
-.logo--inverse {
-  color: $white-color;
 }

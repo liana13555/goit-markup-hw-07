@@ -1,5 +1,3 @@
-/* Button-close */ 
-
 .button-close {
   position: absolute;
   top: 8px;
@@ -20,14 +18,13 @@
   outline: none;
 
   transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .button-close__icon {
   fill: currentColor;
-}
-
-.button-close:hover,
-.button-close:focus {
-  color: $accent-color;
-}
- 
+} 
