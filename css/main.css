@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #757575;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -64,7 +64,7 @@ textarea {
 
 .logo {
   color: #000000;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
